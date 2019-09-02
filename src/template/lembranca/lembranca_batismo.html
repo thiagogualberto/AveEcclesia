@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Lembrança de Batismo</title>
+	<link rel="stylesheet" href="src/template/lembranca/style.css">
+</head>
+<body>
+	<htmlpageheader name="header">
+		<header class="border-top border-bottom">
+			<h3>#paroquia_nome# - CNPJ: #cnpj#</h3>
+			<p>#endereco# - #bairro# - #cep# - #cidade#/#uf#</p>
+		</header>
+	</htmlpageheader>
+	<sethtmlpageheader name="header" show-this-page="1" />
+
+	<htmlpagefooter name="footer">
+		<footer class="border-top text-italic">
+			<small>Emitido em #datetime# por #usuario#</small>
+		</footer>
+	</htmlpagefooter>
+	<sethtmlpagefooter name="footer" />
+
+	<div class="content">
+		<img src="src/template/lembranca/lembranca_batismo.jpg" style="z-index: -1">
+		<br><br><h3>Lembrança de Batismo</h3><br><br>
+		
+		<div class="text-italic">
+			<span>Certifico que aos #dt_batismo#, na Paróquia #paroquia_nome#, da cidade de #cidade# - #uf#, o celebrante #celebrante# batizou solenemente a:<br><br>
+			<b>#nome#</b><br><br>
+			Nascido(a) no dia #dt_nascimento#, filho(a) de #pai# e de #mae#, tendo sido padrinhos #padrinho# e #madrinha#.
+			</span>
+		</div>
+
+		<!-- Assinatura -->
+		<div class="border-top" style="margin: 1.5cm 20% 1cm 20%; padding-top: 5px">#celebrante#<br>Celebrante</div>
+	</div>
+</body>
+</html>

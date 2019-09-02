@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Lembrança da Crisma</title>
+	<link rel="stylesheet" href="src/template/lembranca/style.css">
+</head>
+<body>
+	<htmlpageheader name="header">
+		<header class="border-top border-bottom">
+			<h3>#paroquia_nome# - CNPJ: #cnpj#</h3>
+			<p>#endereco# - #bairro# - #cep# - #cidade#/#uf#</p>
+		</header>
+	</htmlpageheader>
+	<sethtmlpageheader name="header" show-this-page="1" />
+
+	<htmlpagefooter name="footer">
+		<footer class="border-top text-italic">
+			<small>Emitido em #datetime# por #usuario#</small>
+		</footer>
+	</htmlpagefooter>
+	<sethtmlpagefooter name="footer" />
+
+	<div class="content">
+		<img src="src/template/lembranca/lembranca_crisma.jpg" style="z-index: -1">
+		<br><br><h3>Lembrança da Crisma</h3><br>
+		
+		<div class="text-italic">
+			<span>Certifico que aos #dt_crisma#, na Paróquia #paroquia_nome#, igreja #local_crisma# da cidade de #cidade# - #uf#, o celebrante Dom #celebrante# crismou solenemente a:<br><br>
+			<b>#nome#</b><br><br>
+			Nascido(a) no dia #dt_nascimento#, filho(a) de #pai# e de #mae#, tendo sido padrinho/madrinha #padrinho#/#madrinha#.
+			</span>
+		</div>
+
+		<!-- Assinatura -->
+		<div class="border-top" style="margin: 1.5cm 20% 1cm 20%; padding-top: 5px">#celebrante#<br>Celebrante</div>
+	</div>
+</body>
+</html>

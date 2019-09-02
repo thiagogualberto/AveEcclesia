@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="src/template/relatorio/relatorio.css">
+	<link rel="stylesheet" href="src/template/relatorio/template.css">
+	<style>
+		.total {
+			margin-top: 32px;
+			padding-top: 16px;
+			padding-right: 16px;
+			border-top: thin solid #aaa;
+			/* border-bottom: thin solid; */
+		}
+	</style>
+</head>
+<body>
+
+	<htmlpageheader name="header">
+		<table class="header">
+			<tr class="info">
+				<td colspan="1" class="td_logo">
+					<img class="logo" src="#logo#">
+				</td>
+				<td colspan="6" class="text-right">
+					<p>#paroquia_nome#</p>
+					<p>CNPJ: #paroquia_cnpj#</p>
+					<p>#paroquia_cep#, #paroquia_cidade# ‒ #paroquia_uf#</p>
+					<p>#paroquia_tel#</p>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="7" class="title">
+					DÍZIMOS RECEBIDOS GERAL ‒ PERÍODO: #inicio# à #fim#
+				</th>
+			</tr>
+		</table>
+	</htmlpageheader>
+	<sethtmlpageheader name="header" show-this-page="1" />
+
+	<htmlpagefooter name="footer">
+		<table class="footer">
+			<tr>
+				<td>
+					<p>#paroquia_endereco#</p>
+					<p>#paroquia_cep# ‒ #paroquia_cidade# ‒ #paroquia_uf#</p>
+				</td>
+				<td>
+					<p>Sistema Ave Ecclesia</p>
+					<p>Uma solução Vertex Tecnologia</p>
+				</td>
+				<td class="text-right">
+					<p>Página: {PAGENO} de {nbpg}</p>
+					<p>Emitido por #usuario# em {DATE d/m/Y à\s H:i}</p>
+				</td>
+			</tr>
+		</table>
+	</htmlpagefooter>
+	<sethtmlpagefooter name="footer" />
+
+	<table class="table">
+		<thead>
+			<tr>
+				<th width="2cm" align="left">Vencto</th>
+				<th align="left">Nome</th>
+				<th align="left">Histórico</th>
+				<th width="3cm" align="right">Valor</th>
+				<th width="2cm" align="left">Pagto</th>
+				<th width="2.5cm" align="right">Pago</th>
+			</tr>
+		</thead>
+		<tbody>
+			@each dizimos
+			<tr>
+				<td>#dt_vencimento#</td>
+				<td>#pessoa_nome#</td>
+				<td>#descricao#</td>
+				<td align="right">#valor#</td>
+				<td>#dt_pagamento#</td>
+				<td align="right">#pago#</td>
+			</tr>
+			@end
+		</tbody>
+	</table>
+
+	<p align="right">
+		<strong>TOTAL: #total#</strong>
+	</p>
+</body>
+</html>

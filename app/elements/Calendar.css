@@ -1,0 +1,35 @@
+.Calendar {
+	margin-left: 5px;
+	margin-right: 8px;
+	font-weight: bold;
+	width: 210px;
+}
+
+.Calendar .text-decoration-none {
+	text-decoration: none !important
+}
+
+.Calendar .btn {
+	z-index: 2;
+}
+
+.Calendar .btn.position-absolute {
+	z-index: 1;
+	font-size: 11pt;
+	line-height: 27px;
+}
+
+.months .btn {
+	font-size: 10pt;
+	font-weight: bold;
+	padding: 8px 6px;
+}
+
+.months .btn:hover {
+	background: #e3e5e8;
+}
+
+.months .btn.selected {
+	background: #e3e5e8;
+    color: #2ca01c;
+}

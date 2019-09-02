@@ -1,0 +1,11 @@
+.MembroDetalhes .form-fill label {
+	font-weight: bolder;
+}
+
+.MembroDetalhes .form-fill .form-control-plaintext {
+	border-bottom: 2px solid #e8e8e8;
+	color: #495057;
+	background-color: #f8f8f8;
+	padding-left: 10px;
+	white-space: pre-line;
+}

@@ -1,0 +1,117 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+body {
+	padding-top: 3.5rem;
+	overflow-y: scroll;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+	position: fixed;
+	top: 51px;
+	bottom: 0;
+	left: 0;
+	z-index: 1000;
+	padding: 20px 0;
+	overflow-x: hidden;
+	overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+	border-right: 1px solid #eee;
+}
+
+/* .sidebar .nav {
+	margin-bottom: 20px;
+} */
+
+.sidebar .nav-item {
+	width: 100%;
+}
+
+.sidebar .nav-item + .nav-item {
+	margin-left: 0;
+}
+
+.sidebar .nav-link {
+	border-radius: 0;
+}
+
+/* .sidebar .collapse-link {
+	background: #f1f1f1;
+}
+
+.sidebar .collapse-link.collapsed {
+	background: inherit;
+} */
+
+.sidebar .collapse-link::after {
+	content: "\f078";
+	display: inline-block;font:normal normal normal 14px/1 FontAwesome;
+	transition: .3s;
+	padding: 4px;
+	float: right;
+}
+
+.sidebar .collapse-link.collapsed::after {
+	transform: rotate(-90deg);
+}
+
+.sidebar .nav-item > div {
+	background: #f0f0f0;
+}
+
+/*
+ * Dashboard
+ */
+
+/* Placeholders */
+.placeholders {
+	padding-bottom: 3rem;
+}
+
+.placeholder img {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+}
+
+.sidebar .nav-item .nav-item a.nav-link {
+    padding-left: 30px;
+}
+
+li.nav-item ul.nav {
+	padding: 6px 0;
+	box-shadow: inset 0 4px 6px -5px, inset 0 -2px 6px -5px;
+}
+
+.sidebar .nav-link.active,
+.btn-primary {
+	background-color: #0288D1!important;
+}
+
+.btn-primary:hover {
+	background-color: #0277BD!important;
+}
+
+.btn-primary:active {
+	border-color: #0091EA!important;
+}
+
+a {
+	color: #0277BD;
+}
+
+.nav-link > i {
+	margin-right: 5px;
+}
+
+#loading {
+	transition: 300ms;
+}
+
+input, select {
+	box-shadow: none!important
+}

@@ -1,0 +1,6 @@
+/vendor/
+/node_modules/
+.log
+/static/js/bundle/
+/uploads
+.env

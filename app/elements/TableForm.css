@@ -1,0 +1,9 @@
+.btn-detalhes {
+	position: relative;
+    left:  50%;
+	transform: translateX(-50%);
+}
+
+tr.edit {
+	background-color: rgba(0,0,0,.04);
+}

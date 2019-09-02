@@ -1,0 +1,56 @@
+* { padding: 0; margin: 0 }
+
+body {
+	font-family: Arial
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+.content {
+	padding: 18px;
+	border-radius: 5px;
+}
+
+p {
+	width: 100%
+}
+p span {
+	border-bottom: thin solid;
+	width: 100%;
+}
+
+.title {
+	font-size: 20pt;
+	font-weight: bold;
+	position: relative;
+	width: 100%;
+}
+
+/* Border */
+.border{border:thin solid}
+.border-top{border-top:thin solid}
+.border-left{border-left:thin solid}
+.border-right{border-right:thin solid}
+.border-bottom{border-bottom:thin solid}
+
+/* Align */
+.align-left{text-align:left}
+.align-right{text-align:right}
+.align-center{text-align:center}
+.align-justify{text-align:justify}
+
+.w-100 {width: 100%}
+
+/* Float */
+.float-left{float:left}
+.float-right{
+	position: absolute;
+	right: 0;
+}
+
+/* Font-Style */
+.text-italic{font-style:italic}

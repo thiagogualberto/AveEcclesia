@@ -1,0 +1,10 @@
+{
+	"name": "Ave Ecclesia - Tecnologia em Gestão de igrejas",
+	"short_name": "Ave Ecclesia",
+	"start_url": "/aveecclesia/login",
+	"display": "standalone",
+	"background_color": "#fff",
+	"description": "Sistema de gerenciamento de igrejas",
+	"lang": "pt-BR",
+	"orientation": "portrait-primary"
+}

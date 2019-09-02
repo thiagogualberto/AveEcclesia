@@ -1,0 +1,95 @@
+<html>
+<head>
+	<title>Notificação de Matrimônio</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="src/template/lembranca/style.css">
+	<style>
+		.font-size { font-size: 9pt }
+		.content {
+			padding: 0;
+			padding-top: 1.6cm;
+		}
+
+		.assign-container {
+			width: 80%;
+			margin-top: 1cm;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.assign-line {
+			margin-top: 2.4cm
+		}
+
+		.box-carimbo {
+			width: 1.4cm;
+			padding: .8cm .5cm;
+		}
+	</style>
+</head>
+<body>
+	<htmlpageheader name="header">
+		<header class="border-top border-bottom">
+			<h3>#paroquia_nome# - CNPJ: #cnpj#</h3>
+			<p>#endereco# - #bairro# - #cep# - #cidade#/#uf#</p>
+		</header>
+	</htmlpageheader>
+	<sethtmlpageheader name="header" show-this-page="1" />
+
+	<htmlpagefooter name="footer">
+		<footer class="border-top text-italic">
+			<small>Emitido em #datetime# por #usuario#</small>
+		</footer>
+	</htmlpagefooter>
+	<sethtmlpagefooter name="footer" />
+
+	<div class="content">
+		<h3>I - Notificação de Matrimônio</h3>
+		<div>
+			<span>À Paróquia #paroquia_destino# da Diocese de #diocese_destino# em #cidade_destino#.<br><br>
+			Casou-se na Paróquia #local_casamento#<br>
+			<b>Nome: </b>#nome#<br>
+			<b>Filiação: </b>#pai# e #mae#<br><br>
+			Registrado no livro de batizados desta Paróquia de <b>número:</b> #livro#, <b>folha:</b> #folha#, <b>termo:</b> #registro#<br><br>
+			<b>Nome do(a) cônjuge:</b> #conjuge#.<br>
+			<b>Data do Casamento:</b> #dt_casamento#.<br></span>
+	
+		</div>
+		
+		<!-- Assinatura -->
+		<p class="align-left">#cidade#, #dt_hoje#</p>
+
+		<div class="assign-container">
+			<div class="float-left" width="20%">
+				<div class="font-size border box-carimbo">
+					Selo
+					<br>Paroquial
+				</div>
+			</div>
+			<div class="float-right" width="78%">
+				<div class="border-top assign-line">Pároco</div>
+			</div>
+		</div>
+
+
+		<br>
+		<h3>II - Resposta da Paróquia onde se fez a anotação</h3><br>
+		<span>Comunico à ___________________________________________ <br> que fiz a presente anotação.<br><br><br>
+		
+		<p align=right>______________________ , ____ de _________________ de ______.</p>(Local e data)
+		</span>
+
+		<div class="assign-container">
+			<div class="float-left" width="20%">
+				<div class="font-size border box-carimbo">
+					Selo
+					<br>Paroquial
+				</div>
+			</div>
+			<div class="float-right" width="78%">
+				<div class="border-top assign-line">Pároco</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

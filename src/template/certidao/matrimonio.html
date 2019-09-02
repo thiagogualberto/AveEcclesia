@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Certidão de matrimônio</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
+		}
+
+		header {
+			z-index: 9999;
+		}
+
+		.content {
+			padding-top: 2cm;
+			font-size: 12pt;
+		}
+
+		.border-top{border-top:thin solid}
+		.border-bottom{border-bottom:thin solid}
+		.align-left{text-align:left}
+		.text-italic{font-style:italic}
+	</style>
+</head>
+<body>
+	<htmlpageheader name="header">
+		<header class="border-top border-bottom">
+			<h3>#paroquia_nome# - CNPJ: #cnpj#</h3>
+			<p>#endereco# - #bairro# - #cep# - #cidade#/#uf#</p>
+		</header>
+	</htmlpageheader>
+	<sethtmlpageheader name="header" show-this-page="1" />
+
+	<htmlpagefooter name="footer">
+		<footer class="border-top text-italic">
+			<small>Emitido em #datetime# por #usuario#</small>
+		</footer>
+	</htmlpagefooter>
+	<sethtmlpagefooter name="footer" />
+
+	<div class="content">
+		<img src="static/img/casamento.jpg" style="z-index: -1">
+		<h3>Livro: #livro# - Folha: #folha# - Registro: #registro#</h3>
+		
+		<div class="text-italic">
+			<span>Certifico e dou fé que no dia #dt_casamento#, nesta Paróquia,</span><br>
+			<span>depois de feitos os devidos proclamas e sem impedimento algum, na forma do Ritual</span><br>
+			<span>testemunhas #testemunha1# e #testemunha2#.</span><br>
+			<span>como celebrante #celebrante#, casaram-se:</span><br>
+
+			<h4>#noivo_nome# e #noiva_nome#</h4>
+
+			<span>Ele, #noivo_estado_civil#, filho de #noivo_pai# e de #noivo_mae#,</span><br>
+			<span>nascido em #noivo_dt_nascimento#, batizado em #noivo_dt_batismo# na #noivo_batismo_paroquia#.</span><br>
+			<br>
+			<span>Ela, #noiva_estado_civil#, filha de #noiva_pai# e de #noiva_mae#,</span><br>
+			<span>nascida em #noiva_dt_nascimento#, batizada em #noiva_dt_batismo# na #noiva_batismo_paroquia#.</span><br>
+		</div>
+		
+		<br><br>
+
+		<p class="align-left">E por ser verdade, mandei firmar o presente.</p>
+		<p class="align-left">#cidade#, #data#</p>
+
+		<br>
+
+		<!-- Assinatura -->
+		<div class="border-top" style="margin: 1.5cm 20% 1cm 20%; padding-top: 5px">Pároco</div>
+	</div>
+</body>
+</html>

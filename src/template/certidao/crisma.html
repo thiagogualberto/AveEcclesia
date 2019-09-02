@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Certidão de crisma</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+
+		body {
+			font-family: Arial, Helvetica, sans-serif;
+			text-align: center;
+		}
+
+		header {
+			z-index: 9999;
+		}
+
+		.content {
+			padding-top: 2cm;
+			font-size: 12pt;
+		}
+
+		.border-top{border-top:thin solid}
+		.border-bottom{border-bottom:thin solid}
+		.align-left{text-align:left}
+		.text-italic{font-style:italic}
+	</style>
+</head>
+<body>
+	<htmlpageheader name="header">
+		<header class="border-top border-bottom">
+			<h3>#paroquia_nome# - CNPJ: #cnpj#</h3>
+			<p>#endereco# - #bairro# - #cep# - #cidade#/#uf#</p>
+		</header>
+	</htmlpageheader>
+	<sethtmlpageheader name="header" show-this-page="1" />
+
+	<htmlpagefooter name="footer">
+		<footer class="border-top text-italic">
+			<small>Emitido em #datetime# por #usuario#</small>
+		</footer>
+	</htmlpagefooter>
+	<sethtmlpagefooter name="footer" />
+
+	<div class="content">
+		<img src="static/img/crisma.jpg" style="z-index: -1">
+		<h3>Livro: #livro# - Folha: #folha# - Registro: #registro#</h3>
+		
+		<div class="text-italic">
+			<span>Certifico e dou fé que no dia #dt_crisma#, nesta Paróquia,</span><br>
+			<span>foi realizada a crisma de #nome#, nascido(a) em: #dt_nascimento#,</span><br>
+			<span>filho (a) de #pai# e de #mae#,</span><br>
+			<span>padrinhos #padrinho# e #madrinha#.</span><br>
+	
+			<!-- Nome do celebrante -->
+			<p>Celebrante: #celebrante#.</p>
+	
+			<!-- Informação -->
+			<p>Nada mais contém o referido assentamento, que fielmente copiei.</p>
+	
+			<!-- Palavra sacerdotal -->
+			<h4>ITA IN FIDE SACERDOTIS</h4>
+		</div>
+
+		<!-- Assinatura -->
+		<p class="align-left">#cidade#, #dt_hoje#</p>
+		<div class="border-top" style="margin: 1.5cm 20% 1cm 20%; padding-top: 5px">Pároco</div>
+	</div>
+</body>
+</html>

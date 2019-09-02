@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Processo Matrimonial</title>
+	<link rel="stylesheet" href="src/template/certidao/processo_matrimonial.css">
+</head>
+
+<body>
+	<htmlpageheader name="header">
+		<header class="border-top border-bottom align-center">
+			<h3>#paroquia_nome# - CNPJ: #cnpj#</h3>
+			<p>#endereco# - #bairro# - #cep# - #cidade#/#uf#</p>
+		</header>
+	</htmlpageheader>
+	<sethtmlpageheader name="header" show-this-page="1" />
+
+	<htmlpagefooter name="footer">
+		<footer class="border-top text-italic align-center">
+			<small>Emitido em #datetime# por #usuario#</small>
+		</footer>
+	</htmlpagefooter>
+	<sethtmlpagefooter name="footer" />
+
+	<div class="content header-padding">
+
+		<!-- NOIVOS -->
+		<h3 class="align-center title">PROCESSO MATRIMONIAL</h3>
+		<p>NOIVO: #noivo_nome#</p>
+		<p>NOIVA: #noiva_nome#</p>
+
+		<!-- LOCAL -->
+		<p class="text-italic align-center subtitle">LOCAL E DATA DA CELEBRAÇÃO DO CASAMENTO</p>
+		<p>Local: #local_casamento#, #dt_casamento#</p>
+		<p>Horário: #hr_casamento#</p>
+
+		<!-- PROCLAMAS -->
+		<p class="text-italic align-center subtitle">PROCLAMAS OU EDITAL</p>
+		<p>1ª: #proclamas1#</p>
+		<p>2ª: #proclamas2#</p>
+		<p>3ª: #proclamas3#</p>
+
+		<!-- PROCLAMAS -->
+		<p class="text-italic align-center subtitle">CURSO DE NOIVOS</p>
+		<p>Em #dt_curso#</p>
+		<p>Local: #local_curso#</p>
+
+		<hr>
+
+		<table width="100%" style="margin-bottom: 18px">
+			<tr>
+				<td colspan="3">NOIVO: #noivo_nome#</td>
+				<td colspan="2">Dt. Nascimento: #noivo_dt_nascimento#</td>
+				<td>Idade: #noivo_idade# anos</td>
+			</tr>
+			<tbody>
+				<tr><td colspan="6">Pai: #noivo_pai#</td></tr>
+				<tr><td colspan="6">Mãe: #noivo_mae#</td></tr>
+				<tr>
+					<td colspan="2">Identidade: #noivo_rg#</td>
+					<td colspan="2">CPF: #noivo_cpf_cnpj#</td>
+					<td>Sexo: #noivo_sexo#</td>
+					<td>Estado civil: #noivo_estado_civil#</td>
+				</tr>
+				<tr>
+					<td colspan="2">Endereço: #noivo_endereco#</td>
+					<td colspan="4">Bairro: #noivo_bairro#</td>
+				</tr>
+				<tr>
+					<td colspan="2">Cidade: #noivo_cidade#</td>
+					<td colspan="2">UF: #noivo_uf#</td>
+					<td colspan="2">CEP: #noivo_cep#</td>
+				</tr>
+				<tr>
+					<td colspan="2">Telefone: #noivo_tel#</td>
+					<td colspan="2">Celular: #noivo_cel#</td>
+					<td colspan="2">email: #noivo_email#</td>
+				</tr>
+				<tr>
+					<td>Batizado em: #noivo_dt_batismo#</td>
+					<td style="padding: 0 10px">Livro: #noivo_batismo_livro#</td>
+					<td style="padding: 0 10px">Folha: #noivo_batismo_folha#</td>
+					<td style="padding: 0 10px">Registro: #noivo_batismo_registro#</td>
+					<td colspan="2">Paróquia: #noivo_batismo_paroquia#</td>
+				</tr>
+			</tbody>
+		</table>	
+		<table width="100%">
+			<tr>
+				<td colspan="3">NOIVA: #noiva_nome#</td>
+				<td colspan="2">Dt. Nascimento: #noiva_dt_nascimento#</td>
+				<td>Idade: #noiva_idade# anos</td>
+			</tr>
+			<tbody>
+				<tr><td>Pai: #noiva_pai#</td></tr>
+				<tr><td>Mãe: #noiva_mae#</td></tr>
+				<tr>
+					<td colspan="2">Identidade: #noiva_rg#</td>
+					<td colspan="2">CPF: #noiva_cpf_cnpj#</td>
+					<td>Sexo: #noiva_sexo#</td>
+					<td>Estado civil: #noiva_estado_civil#</td>
+				</tr>
+				<tr>
+					<td colspan="2">Endereço: #noiva_endereco#</td>
+					<td colspan="4">Bairro: #noiva_bairro#</td>
+				</tr>
+				<tr>
+					<td colspan="2">Cidade: #noiva_cidade#</td>
+					<td colspan="2">UF: #noiva_uf#</td>
+					<td colspan="2">CEP: #noiva_cep#</td>
+				</tr>
+				<tr>
+					<td colspan="2">Telefone: #noiva_tel#</td>
+					<td colspan="2">Celular: #noiva_cel#</td>
+					<td colspan="2">email: #noiva_email#</td>
+				</tr>
+				<tr>
+					<td>Batizado em: #noiva_dt_batismo#</td>
+					<td style="padding: 0 10px">Livro: #noiva_batismo_livro#</td>
+					<td style="padding: 0 10px">Folha: #noiva_batismo_folha#</td>
+					<td style="padding: 0 10px">Registro: #noiva_batismo_registro#</td>
+					<td colspan="2">Paróquia: #noiva_batismo_paroquia#</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<p class="text-italic align-center subtitle">AUTORIZAÇÃO DOS PAIS (em se tratando de menores)</p>
+		<p>Os pais de #noivo_nome# e de #noiva_nome# concordam com o casamento.</p>
+
+		<div>
+			<div style="width: 48%; float: left">
+				<div class="border-top assign-line">Mãe: #noivo_mae#</div>
+				<div class="border-top assign-line">Pai: #noivo_pai#</div>
+			</div>
+			<div style="width: 48%; float: right">
+				<div class="border-top assign-line">Mãe: #noiva_mae#</div>
+				<div class="border-top assign-line">Pai: #noiva_pai#</div>
+			</div>
+		</div>
+	</div>
+
+	<sethtmlpageheader name="header" value="OFF" />
+	<pagebreak />
+
+	<div class="content">
+
+		<!-- Declaração -->
+		<p class="text-italic align-center subtitle">DECLARAÇÃO DOS NOIVOS</p>
+		<p class="text-italic align-center">Os nubentes abaixo assinado fizeram a seguinte declaração:</p>
+		<p class="text-italic align-center">"Prometo dizer a verdade e só a verdade sobre tudo o que me for perguntado."</p>
+
+		<br>
+
+		<!-- Questões -->
+		<table autosize="1">
+			<thead>
+				<tr>
+					<th width="50%"></th>
+					<th class="align-left" width="25%">Noivo</th>
+					<th class="align-left" width="25%">Noiva</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>01 - Sua religião:</td>
+					<td>#q1a#</td>
+					<td>#q1b#</td>
+				</tr>
+				<tr>
+					<td>02 - Sacramentos:</td>
+					<td>#q2a#</td>
+					<td>#q2b#</td>
+				</tr>
+				<tr>
+					<td>03 - Sua profissão:</td>
+					<td>#q3a#</td>
+					<td>#q3b#</td>
+				</tr>
+				<tr>
+					<td>04 - Escolaridade:</td>
+					<td>#q4a#</td>
+					<td>#q4b#</td>
+				</tr>
+				<tr>
+					<td>05 - Vai se casar livre e espontaneamente?</td>
+					<td>#q5a#</td>
+					<td>#q5b#</td>
+				</tr>
+				<tr>
+					<td>06 - Vai assumir o matrimônio por toda vida?</td>
+					<td>#q6a#</td>
+					<td>#q6b#</td>
+				</tr>
+				<tr>
+					<td>07 - Compromete-se a acolher e educar cristãmente seus filhos?</td>
+					<td>#q7a#</td>
+					<td>#q7b#</td>
+				</tr>
+				<tr>
+					<td>08 - Já se casou no Civil?</td>
+					<td>#q8a#</td>
+					<td>#q8b#</td>
+				</tr>
+				<tr>
+					<td>09 - Com quem?</td>
+					<td>#q9a#</td>
+					<td>#q9b#</td>
+				</tr>
+				<tr>
+					<td>10 - Já se casou no Religioso?</td>
+					<td>#q10a#</td>
+					<td>#q10b#</td>
+				</tr>
+				<tr>
+					<td>11 - Com quem?</td>
+					<td>#q11a#</td>
+					<td>#q11b#</td>
+				</tr>
+				<tr>
+					<td>12 - Como se desfez o referido casamento?</td>
+					<td>#q12a#</td>
+					<td>#q12b#</td>
+				</tr>
+				<tr>
+					<td>13 - Há algum parentesco entre vocês? Qual?</td>
+					<td>#q13a#</td>
+					<td>#q13b#</td>
+				</tr>
+				<tr>
+					<td>14 - Fez o curso de noivos?</td>
+					<td>#q14a#</td>
+					<td>#q14b#</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<div class="assign-block top-1">
+			<div class="left">
+				<p>_____________________________________, ________ de ____________________ de ____________</p>
+				<p>NOIVO: ______________________________________________________________________________</p>
+				<p>NOIVA: ______________________________________________________________________________</p>
+				<p>PÁROCO OU VIGÁRIO: _______________________________________________________________</p>
+			</div>
+			<div class="align-center border float-right m-0" style="width: 3.5cm; height: 3.5cm; padding: 10px">CARIMBO</div>
+		</div>
+
+		<div class="border top-1 box-content">
+			<p class="text-italic align-center subtitle">AUTORIZAÇÃO A OUTRO SACERDOTE</p>
+			<p>Autorizo ao Revmo. Sr. ___________________________________________________ a assistir ao casamento dos nubentes mencionados
+			neste processo.</p>
+			<p>_____________________________________, ________ de ____________________ de ____________</p>
+			<p>PÁROCO OU VIGÁRIO: _______________________________________________________________</p>
+		</div>
+
+		<div class="border top-1 box-content">
+			<p class="text-italic align-center subtitle">AUTORIZAÇÃO DE TRANSFERÊNCIA</p>
+			<p>Autorizo aos nubentes mencionados neste processo a se casarem fora desta Paróquia.</p>
+			<p>_____________________________________, ________ de ____________________ de ____________</p>
+			<p>PÁROCO OU VIGÁRIO: _______________________________________________________________</p>
+		</div>
+	</div>
+
+	<pagebreak />
+
+	<div class="content">
+		<div class="border top-1 box-content">
+			<p class="text-italic align-center subtitle">JUSTIFICAÇÃO DE BATISMO E ESTADO LIVRE</p>
+			<p>As testemunhas abaixo assinado conscientes de suas responsabilidades de dizerem toda a verdade declaram que conhecem #noivo_nome# que é solteiro e foi batizado em #noivo_dt_batismo#, e que conhecem #noiva_nome# que é solteira e foi
+			batizada em #noiva_dt_batismo#.</p>
+			<p>_____________________________________, ________ de ____________________ de ____________</p>
+			<p>PÁROCO OU VIGÁRIO: _______________________________________________________________</p>
+		</div>
+		<div class="border top-1 h-100 box-content">
+			<p class="text-italic align-center subtitle">(Árvore genealógica e outras observações)</p>
+		</div>
+	</div>
+
+	<pagebreak />
+	
+	<div class="content">
+		<div class="border box-content">
+			<p class="text-italic align-center subtitle">CERTIDÃO</p>
+			<p>Certifico que, nesta data, no horário de #hr_casamento#, no local #local_casamento#, na minha presença e das testemunhas abaixo assinadas receberam-se em matrimônio os nubentes mencionados neste processo.</p>
+			<p>_____________________________________, ________ de ____________________ de ____________</p>
+			<p>Celebrante: _________________________________________________________________________</p>
+			<p>Assinatura do Noivo: ________________________________________________________________</p>
+			<p>Assinatura da Noiva: ________________________________________________________________</p>
+		</div>
+
+		<div class="border box-content top-1" style="padding-top: 8px">
+			<p>O CONTRATO CIVIL realizou-se no Cartório de ________________________________________________________</p>
+			<p>no dia _____ de __________________ de __________ LIVRO ______ FOLHA ______ REGISTRO ______</p>
+		</div>
+
+		<p class="text-italic align-center subtitle">TESTEMUNHAS</p>
+
+		<div class="testemunhas">
+			<div class="float-left" style="width: 48%">
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+			</div>
+			<div class="float-right" style="width: 48%">
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+				<div class="border-top assign-line"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

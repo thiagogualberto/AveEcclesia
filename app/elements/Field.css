@@ -1,0 +1,19 @@
+.form-control .custom-control {
+	transform: translateY(1px);
+}
+.form-control .custom-control ::before {
+	transform: translateY(-1px);
+}
+.form-control .custom-control ::after {
+	transform: translateY(-1px);
+}
+
+.form-control-sm .custom-control {
+	transform: translateY(2px);
+}
+.form-control-sm .custom-control ::before {
+	transform: translateY(-2px);
+}
+.form-control-sm .custom-control ::after {
+	transform: translateY(-2px);
+}

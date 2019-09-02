@@ -1,0 +1,6 @@
+.toggle i {
+    line-height: 0;
+    position: relative;
+	cursor: pointer;
+    top: 6px;
+}

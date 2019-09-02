@@ -1,0 +1,116 @@
+body {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 9pt;
+    line-height: 1.42857143;
+    color: #333;
+	background-color: #fff;
+	margin: 0;
+}
+
+table {
+	width: 100%;
+}
+
+.table {
+	text-align: left;
+	/* margin-bottom: 12mm; */
+	border-collapse: collapse;
+	padding-top: 2cm;
+	padding-bottom: 2cm;
+	vertical-align: bottom;
+	border-bottom: 2px solid #ddd;
+}
+
+.table td {
+	font-size: 8pt;
+}
+
+.header {
+	text-align: center;
+	margin-bottom: 12mm;
+	border-collapse: collapse;
+	padding-top: 2cm;
+	padding-bottom: 2cm;
+	vertical-align: bottom;
+}
+
+.footer {
+	border-top: thin solid;
+	width: 100%;
+}
+
+.footer td {
+	border: none;
+	font-size: 7pt;
+	width: 33.3%;
+}
+
+.footer td:nth-child(2) {
+	text-align: center;
+}
+
+.logo {
+	height: 1.8cm;
+}
+
+.td_logo {
+	text-align: left;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-compress {
+	font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+.total {
+	text-align: right;
+}
+
+.logo {
+	max-height: 1.35cm;
+	padding: 4px;
+}
+
+.title {
+	border-top: 0;
+	font-size: 11pt;
+	background: rgba(0,0,0,.08);
+	border-top: thin solid;
+	border-bottom: thin solid;
+	padding: 5px;
+}
+
+.table td, th {
+	padding: 5px;
+    line-height: 1.42857143;
+	border-top: 1px solid #ddd;
+}
+
+.table th {
+	vertical-align: center;
+	text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.info td {
+	border-top: 0;
+}
+
+.table tbody tr:nth-child(even) {
+	background: #f0f0f0;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+h3 {
+	padding-top: 12px;
+}

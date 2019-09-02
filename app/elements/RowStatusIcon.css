@@ -1,0 +1,14 @@
+.status-icon {
+    width: 18px;
+    height: 18px;
+    font-size: 9pt;
+    margin-top: 3px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    border-top-left-radius: 9px;
+    transform: rotate(45deg) translate(3px,-3px);
+}
+
+.status-icon i {
+    transform: rotate(-45deg);
+}

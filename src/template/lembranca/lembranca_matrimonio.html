@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Lembrança de Matrimônio</title>
+	<link rel="stylesheet" href="src/template/lembranca/style.css">
+</head>
+<body>
+	<htmlpageheader name="header">
+		<header class="border-top border-bottom">
+			<h3>#paroquia_nome# - CNPJ: #cnpj#</h3>
+			<p>#endereco# - #bairro# - #cep# - #cidade#/#uf#</p>
+		</header>
+	</htmlpageheader>
+	<sethtmlpageheader name="header" show-this-page="1" />
+
+	<htmlpagefooter name="footer">
+		<footer class="border-top text-italic">
+			<small>Emitido em #datetime# por #usuario#</small>
+		</footer>
+	</htmlpagefooter>
+	<sethtmlpagefooter name="footer" />
+
+	<div class="content">
+		<img src="src/template/lembranca/lembranca_matrimonio.png" style="z-index: -1">
+		<h3>Lembrança de Matrimônio</h3><br><br>
+		
+		<div class="text-italic">
+			<span>Aos #dt_casamento#, na Paróquia #local_casamento#, <!--na forma #forma_casamento(canônico, ...)#,--> na presença da Testemunha Qualificada #celebrante# e das testemunhas #testemunha1# e #testemunha2#, receberam-se em matrimônio:<br><br>
+			<b>#noivo_nome#</b> e <br> <b>#noiva_nome#</b><br><br>
+			Ele, com #idade_noivo# anos de idade, filho de #noivo_pai# e de #noivo_mae#, <!--nascido em #cidade_noivo# e--> batizado na Paróquia #noivo_batismo_paroquia#. Ela, com #idade_noiva# anos de idade, filha de #noiva_pai# e de #noiva_mae#, <!--nascido em #cidade_noiva# e--> batizado na Paróquia #noiva_batismo_paroquia#.
+			</span>
+		</div>
+
+		<!-- Assinatura -->
+		<div class="border-top" style="margin: 1.5cm 20% 1cm 20%; padding-top: 5px">#paroco#<br>Pároco</div>
+	</div>
+</body>
+</html>

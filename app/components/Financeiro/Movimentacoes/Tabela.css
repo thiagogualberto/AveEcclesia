@@ -1,0 +1,14 @@
+.table-responsive .form-group {
+	margin-bottom: 0
+}
+
+.table-responsive {
+	border: 1px solid #dee2e6;
+	border-bottom: 2px solid #D4D7DC;
+	border-top: none;
+	/* box-shadow: 0 2px 5px rgba(0,0,0,.2) */
+}
+
+.table-responsive .toolbar {
+	padding: 15px
+}

@@ -1,0 +1,46 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+header {
+	z-index: 9999;
+	padding: 10px;
+}
+
+header h3,
+header p {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding: 2.5px;
+}
+
+.content {
+	padding: 2cm;
+	font-size: 12pt;
+}
+
+/* Border */
+.border{border:thin solid}
+.border-top{border-top:thin solid}
+.border-left{border-left:thin solid}
+.border-right{border-right:thin solid}
+.border-bottom{border-bottom:thin solid}
+
+/* Align */
+.align-left{text-align:left}
+.align-right{text-align:right}
+.align-center{text-align:center}
+.align-justify{text-align:justify}
+
+/* Float */
+.float-left{float:left}
+.float-right{float:right}
+
+/* Font-Style */
+.text-italic{font-style:italic}

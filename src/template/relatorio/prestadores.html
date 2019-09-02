@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="src/template/relatorio/relatorio.css">
+	<link rel="stylesheet" href="src/template/relatorio/template.css">
+	<style>
+		th {
+			width: 2.8cm;
+			border: none;
+		}
+
+		.table td, th {
+			padding: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<htmlpageheader name="header">
+		<table class="header">
+			<tr class="info">
+				<td colspan="1" class="td_logo">
+					<img class="logo" src="#logo#">
+				</td>
+				<td colspan="6" class="text-right">
+					<p>#paroquia_nome#</p>
+					<p>CNPJ: #cnpj#</p>
+					<p>#cep#, #cidade# ‒ #uf#</p>
+					<p>#tel1# - #tel2#</p>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="7" class="title text-center">
+					RELATÓRIO DE PRESTADORES DE SERVIÇO
+				</th>
+			</tr>
+		</table>
+	</htmlpageheader>
+	<sethtmlpageheader name="header" show-this-page="1" />
+
+	<htmlpagefooter name="footer">
+		<table class="footer">
+			<tr>
+				<td>
+					<p>#endereco#</p>
+					<p>#cep# ‒ #cidade# ‒ #uf#</p>
+				</td>
+				<td>
+					<p>Sistema Ave Ecclesia</p>
+					<p>Uma solução Vertex Tecnologia</p>
+				</td>
+				<td class="text-right">
+					<p>Página: {PAGENO} de {nbpg}</p>
+					<p>Emitido por #usuario# em {DATE d/m/Y à\s H:i}</p>
+				</td>
+			</tr>
+		</table>
+	</htmlpagefooter>
+	<sethtmlpagefooter name="footer" />
+
+	@each prestadores
+	<table class="">
+		<tbody>
+			<tr>
+				<th align="right">Nome: </th>
+				<td>#nome#</td>
+				<th width="80px" align="right">Nasc: </th>
+				<td width="200px">#dt_nascimento#</td>
+			</tr>
+			<tr>
+				<th align="right">CPF/CNPJ: </th>
+				<td>#cpf_cnpj#</td>
+				<th align="right">IE: </th>
+				<td>#ie#</td>
+			</tr>
+			<tr>
+				<th align="right">Endereço: </th>
+				<td>#endereco#</td>
+				<th align="right">Tel.: </th>
+				<td>#tel#</td>
+			</tr>
+			<tr>
+				<th align="right">Bairro, CEP: </th>
+				<td>#bairro#, #cep#</td>
+				<th align="right">Cel.: </th>
+				<td>#cel#</td>
+			</tr>
+			<tr style="margin-bottom: 50px">
+				<th align="right">Cidade, UF: </th>
+				<td>#cidade#, #uf#</td>
+				<th align="right">E-mail: </th>
+				<td>#email#</td>
+			</tr>
+		</tbody>
+	</table>
+	<hr>
+	@end
+</body>
+</html>

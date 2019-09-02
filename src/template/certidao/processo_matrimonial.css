@@ -1,0 +1,107 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Arial;
+}
+
+header {
+	z-index: 9999;
+}
+
+p, h3 {
+	margin: 3px;
+}
+
+.header-padding {
+	padding-top: 1cm;
+}
+
+.content {
+	font-size: 10pt;
+}
+
+.content table {
+	font-size: 10pt;
+}
+
+.title {
+	font-size: 13pt;
+	padding: 10px;
+}
+
+.subtitle {
+	font-size: 12pt;
+	padding-top: 12px;
+	padding-bottom: 8px;
+}
+
+.assign-line {
+	padding-top: 5px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.testemunhas .assign-line {
+	margin-top: 22px;
+	padding: 10px 0
+}
+
+/* Text Align */
+.align-left { text-align: left }
+.align-right { text-align: left }
+.align-center { text-align: center }
+
+/* Border */
+.border { border: thin solid }
+.border-left { border-left: thin solid }
+.border-right { border-right: thin solid }
+.border-top { border-top: thin solid }
+.border-bottom { border-bottom: thin solid }
+
+/* Margin */
+.m-0 { margin: 0 }
+.p-0 { padding: 0 }
+.left-1 { margin-left: 8mm }
+.right-1 { margin-right: 8mm }
+.top-1 { margin-top: 8mm }
+.bottom-1 { margin-bottom: 8mm }
+
+/* Float */
+.float-left { float: left }
+.float-right { float: right }
+
+.h-100 {
+	height: 100%;
+}
+
+.text-italic {
+	font-style: italic
+}
+
+.assign-block {
+	height: 3.5cm;
+}
+
+.assign-block .left {
+	width: 77%;
+	float: left;
+	line-height: 9mm;
+}
+
+.box-content {
+	padding: 12px;
+	line-height: 7mm
+}
+
+.box-content p {
+	margin: 0;
+	padding: 0;
+}
+
+/* .box-content p {
+	margin: 0!important;
+	margin-bottom: 3px;
+} */

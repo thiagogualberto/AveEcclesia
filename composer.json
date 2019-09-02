@@ -1,0 +1,32 @@
+{
+    "name": "vertex/aveecclesia",
+    "description": "Sistema de gerenciamento de Dioceses",
+    "type": "project",
+    "require": {
+        "carlosroberto555/html-pdf": "^0.2.2",
+        "carlosroberto555/expressphp": "dev-master",
+        "php-activerecord/php-activerecord": "dev-master",
+        "wgenial/numeroporextenso": "dev-master",
+        "vlucas/phpdotenv": "^2.5@dev",
+        "ralouphie/getallheaders": "dev-master",
+        "webmozart/path-util": "^2.3@dev"
+    },
+    "authors": [
+        {
+            "name": "Carlos Roberto",
+            "email": "carlos.junior@vertexgroup.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+	"autoload": {
+        "psr-4": {
+            "Sistema\\": "lib/",
+            "Sistema\\Models\\": "models/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ExpressPHP\\": "../../Projetos/expressphp/src"
+        }
+    }
+}

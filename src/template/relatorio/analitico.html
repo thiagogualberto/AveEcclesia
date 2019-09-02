@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="src/template/relatorio/relatorio.css">
+	<link rel="stylesheet" href="src/template/relatorio/template.css">
+	<style>
+		.total {
+			margin-top: 32px;
+			padding-top: 16px;
+			/* padding-right: 16px; */
+			border-top: thin solid #aaa;
+			/* border-bottom: thin solid; */
+		}
+	</style>
+</head>
+<body>
+
+	<htmlpageheader name="header">
+		<table class="header">
+			<tr class="info">
+				<td colspan="1" class="td_logo">
+					<img class="logo" src="#logo#">
+				</td>
+				<td colspan="6" class="text-right">
+					<p>#paroquia_nome#</p>
+					<p>CNPJ: #cnpj#</p>
+					<p>#cep#, #cidade# ‒ #uf#</p>
+					<p>#tel1# - #tel2#</p>
+				</td>
+			</tr>
+			<tr>
+				<th colspan="7" class="title">
+					RELATÓRIO ANALÍTICO ‒ PERÍODO: #inicio# à #fim#
+				</th>
+			</tr>
+		</table>
+	</htmlpageheader>
+	<sethtmlpageheader name="header" show-this-page="1" />
+
+	<htmlpagefooter name="footer">
+		<table class="footer">
+			<tr>
+				<td>
+					<p>#endereco#</p>
+					<p>#cep# ‒ #cidade# ‒ #uf#</p>
+				</td>
+				<td>
+					<p>Sistema Ave Ecclesia</p>
+					<p>Uma solução Vertex Tecnologia</p>
+				</td>
+				<td class="text-right">
+					<p>Página: {PAGENO} de {nbpg}</p>
+					<p>Emitido por #usuario# em {DATE d/m/Y à\s H:i}</p>
+				</td>
+			</tr>
+		</table>
+	</htmlpagefooter>
+	<sethtmlpagefooter name="footer" />
+
+	<h3>Receitas</h3>
+	<table class="table">
+		<thead>
+			<tr>
+				<th width="2.5cm" align="left">Código</th>
+				<th align="left">Conta</th>
+				<th width="3cm" align="right">Valor</th>
+				<th width="2cm" align="right">%</th>
+			</tr>
+		</thead>
+		<tbody>
+			@each receitas
+			<tr>
+				<td>#codigo#</td>
+				<td>#descricao#</td>
+				<td align="right">#total#</td>
+				<td align="right">#percent#</td>
+			</tr>
+			@end
+		</tbody>
+	</table>
+
+	<p align="right">
+		<strong>RECEITAS -> Sub-total: #total_receitas#</strong>
+	</p>
+
+	<!-- Quebra a pagina -->
+	<pagebreak />
+
+	<h3>Despesas</h3>
+	<table class="table">
+		<thead>
+			<tr>
+				<th width="2.5cm" align="left">Código</th>
+				<th align="left">Conta</th>
+				<th width="3cm" align="right">Valor</th>
+				<th width="2cm" align="right">%</th>
+			</tr>
+		</thead>
+		<tbody>
+			@each despesas
+			<tr>
+				<td>#codigo#</td>
+				<td>#descricao#</td>
+				<td align="right">#total#</td>
+				<td align="right">#percent#</td>
+			</tr>
+			@end
+		</tbody>
+	</table>
+
+	<p align="right">
+		<strong>DESPESAS -> Sub-total: #total_despesas#</strong>
+	</p>
+
+	<p align="right" class="total">
+		<strong style="font-size: 11pt">SALDO: #saldo_total#</strong>
+	</p>
+</body>
+</html>
